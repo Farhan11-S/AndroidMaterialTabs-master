@@ -1,11 +1,8 @@
 package info.androidhive.materialtabs.activity;
-
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -13,9 +10,8 @@ import android.widget.Toast;
 
 import info.androidhive.materialtabs.R;
 
-public class BangunDatar extends AppCompatActivity {
+public class BangunDatar4 extends AppCompatActivity {
     private Toolbar toolbar;
-    EditText number1;
     EditText number2;
     TextView result;
     Button luas;
@@ -23,12 +19,10 @@ public class BangunDatar extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bangun_datar);
+        setContentView(R.layout.activity_bangun_datar4);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        number1 = findViewById(R.id.txtnumber);
         number2 = findViewById(R.id.txtnumber2);
         result = findViewById(R.id.hasil);
         luas = findViewById(R.id.luas);
@@ -36,17 +30,15 @@ public class BangunDatar extends AppCompatActivity {
         luas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String angka = number1.getText().toString();
                 String angka2 = number2.getText().toString();
-                if (angka.isEmpty()||angka2.isEmpty())
+                if (angka2.isEmpty())
                 {
                     Toast.makeText(getApplicationContext(),"Invalid Operation",Toast.LENGTH_LONG).show();
                 }
                 else
                 {
-                    double ubah = Double.parseDouble(angka);
                     double ubah2 = Double.parseDouble(angka2);
-                    double tambah = ubah * ubah2;
+                    double tambah = 22 * ubah2 * ubah2 /7;
                     result.setText(String.valueOf(tambah));
                 }
             }
@@ -55,15 +47,13 @@ public class BangunDatar extends AppCompatActivity {
         keliling.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String angka = number1.getText().toString();
                 String angka2 = number2.getText().toString();
-                if (angka.isEmpty()||angka2.isEmpty())
+                if (angka2.isEmpty())
                 {
                     Toast.makeText(getApplicationContext(),"Invalid Operation",Toast.LENGTH_LONG).show();
                 } else{
-                    double ubah = Double.parseDouble(angka);
                     double ubah2 = Double.parseDouble(angka2);
-                    double tambah = (ubah *2) + (ubah2*2);
+                    double tambah = 2* 22 * ubah2 / 7;
                     result.setText(String.valueOf(tambah));
                 }
             }

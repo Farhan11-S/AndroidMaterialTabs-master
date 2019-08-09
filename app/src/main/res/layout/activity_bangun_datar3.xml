@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.BangunDatar"
+    tools:context=".activity.BangunDatar3"
     android:orientation="vertical">
+
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,13 +32,13 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:hint="Panjang"
+            android:hint="Alas"
             android:inputType="number" />
         <EditText
             android:layout_gravity="center"
             android:id="@+id/txtnumber2"
             android:inputType="number"
-            android:hint="Lebar"
+            android:hint="Tinggi"
             android:layout_width="250dp"
             android:layout_height="wrap_content" />
 
@@ -66,15 +66,6 @@
             android:layout_marginLeft="10dp"
             android:id="@+id/luas"
             android:text="Hitung Luas"
-            android:textSize="50px"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content" />
-        <Button
-            android:background="#CD5C5C"
-            android:textColor="#FFFFFF"
-            android:layout_marginLeft="10dp"
-            android:id="@+id/keliling"
-            android:text="Hitung Keliling"
             android:textSize="50px"
             android:layout_width="160dp"
             android:layout_height="wrap_content" />

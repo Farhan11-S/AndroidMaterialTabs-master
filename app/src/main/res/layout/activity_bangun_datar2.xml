@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.BangunDatar"
-    android:orientation="vertical">
+    tools:context=".activity.BangunDatar2">
+
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,19 +28,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/txtnumber"
+            android:id="@+id/txtnumber2"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:hint="Panjang"
+            android:hint="Sisi"
             android:inputType="number" />
-        <EditText
-            android:layout_gravity="center"
-            android:id="@+id/txtnumber2"
-            android:inputType="number"
-            android:hint="Lebar"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/hasil"

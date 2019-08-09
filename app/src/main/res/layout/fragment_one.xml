@@ -8,20 +8,29 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <EditText
-            android:id="@+id/txtnumber"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:hint="Number 1"
-            android:inputType="number" />
-        <EditText
-            android:layout_gravity="center"
-            android:id="@+id/txtnumber2"
-            android:inputType="number"
-            android:hint="Number 2"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/txtnumber"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Number 1"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout><android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_gravity="center"
+                android:id="@+id/txtnumber2"
+                android:inputType="number"
+                android:hint="Number 2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
 
         <TextView
             android:id="@+id/hasil"
@@ -38,6 +47,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <Button
+                android:background="#CD5C5C"
+                android:textColor="#FFFFFF"
                 android:layout_marginRight="10dp"
                 android:id="@+id/btnplus"
                 android:text="+"
@@ -45,6 +56,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <Button
+                android:background="#CD5C5C"
+                android:textColor="#FFFFFF"
                 android:layout_marginLeft="10dp"
                 android:id="@+id/btnminus"
                 android:text="-"
@@ -61,12 +74,16 @@
             android:layout_height="wrap_content">
             <Button
                 android:layout_marginRight="10dp"
+                android:background="#CD5C5C"
+                android:textColor="#FFFFFF"
                 android:id="@+id/btnkali"
                 android:text="X"
                 android:textSize="50px"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <Button
+                android:background="#CD5C5C"
+                android:textColor="#FFFFFF"
                 android:layout_marginLeft="10dp"
                 android:id="@+id/btnbagi"
                 android:text="/"
